@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+void ham();
+int main(){
+
+	for (;;) {
+		ham();
+		system("pause");
+		
+	}
+}
+void ham() {
+	int number = rand() & 100 + 1;
+	if (number <= 25){
+		cout << "blue blue blue" << endl;
+	system("Color 1F");
+}
+	if (number >= 50 && number <= 75) {
+		cout << "GREEN GREEN GREEN GREEN GREEN" << endl;
+		system("Color 2F");
+	}
+	else {
+		cout << "RED RED RED RED" << endl;
+		system("Color 4F");
+	}
+}
